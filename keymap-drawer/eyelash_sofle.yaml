@@ -1,6 +1,6 @@
 layers:
   DEFAULT:
-  - '&td_grave_esc'
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -12,7 +12,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '-', s: _}
+  - $$mdi:keyboard-esc$$
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -25,8 +25,8 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
-  - '&td_shift_cap'
+  - {t: '-', s: _}
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -51,7 +51,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: \, s: '|'}
+  - CLCK
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
@@ -65,7 +65,7 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   FUNTION:
-  - F11
+  - F12
   - F1
   - F2
   - F3
@@ -77,20 +77,20 @@ layers:
   - F8
   - F9
   - F10
-  - F12
+  - F11
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+Y
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '=', s: +}
   - $$mdi:apple-keyboard-shift$$
   - Ctl+A
   - Ctl+S
@@ -115,11 +115,11 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - \
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: SETTING, type: held}
   - '&mkp MB4'
