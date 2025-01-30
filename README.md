@@ -1,8 +1,7 @@
-- [中文](README.md)
-- [English](README_EN.md)
+# 说明
+trigger-period-ms可能会影响旋钮模拟鼠标功能。
 
 # 更新列表
-
 - 2024/12/21
   1. 增加zmk-studio支持（只需要刷新左手即可使用）。
 - 2024/10/24
