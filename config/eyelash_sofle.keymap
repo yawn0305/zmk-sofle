@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 140    // 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 200    // 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -29,7 +29,6 @@
     acceleration-exponent = <1>;      // 0
     time-to-max-speed-ms = <40>;       // 300
     delay-ms = <0>;                   // 0
-    trigger-period-ms = <8>;
 };
 
 &mmv {
@@ -42,7 +41,7 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <20>;
+        tap-ms = <30>;
     };
 
     td_grave_esc: td_grave_esc {
