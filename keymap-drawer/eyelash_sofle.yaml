@@ -1,6 +1,6 @@
 layers:
   DEFAULT:
-  - '&td_grave_esc'
+  - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -12,7 +12,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '-', s: _}
+  - {t: '`', s: '~'}
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -25,8 +25,8 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
-  - '&td_shift_cap'
+  - {t: '-', s: _}
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -65,58 +65,58 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   FUNTION:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1
   - F2
   - F3
   - F4
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - F6
   - F7
   - F8
   - F9
   - F10
   - F11
+  - F12
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+Y
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-left$$
   - $$mdi:pan-down$$
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F12
+  - {t: '=', s: +}
   - $$mdi:apple-keyboard-shift$$
-  - Ctl+A
-  - Ctl+S
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+F
-  - HOME
+  - F11
+  - F12
+  - F13
+  - F14
+  - F15
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - HOME
   - $$mdi:apple-keyboard-control$$
   - Ctl+Z
   - Ctl+Sft+X
   - Ctl+Sft+C
   - Ctl+Sft+V
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+Y
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - \
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - END
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -182,7 +182,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RGB TOG
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
