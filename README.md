@@ -17,5 +17,5 @@ trigger-period-ms可能会影响旋钮模拟鼠标功能，删了就能实现了
 
 # Sofle键位图
 
-<img src="keymap-drawer/sofle.svg" >
+<img src="keymap-drawer/eyelash_sofle.svg" >
 
