@@ -232,19 +232,16 @@ path.combo {
 /* End Tabler Icons Cleanup */
 
 /* For default sytles, see https://github.com/caksoylar/keymap-drawer/blob/main/keymap_drawer/config.py#L85 */
-
 svg.keymap {
   font-family: Ubuntu Mono, Inconsolata, Consolas, Liberation Mono, Menlo, monospace;
   font-size: 12px;
   font-weight: bold;
   text-rendering: optimizeLegibility;
 }
-
 /* Color accent for held keys */
 rect.held, rect.combo.held {
     fill: #ffc;
 }
-
 /* Technique borrowed and extended from https://github.com/englmaxi/zmk-config/blob/master/keymap-drawer/config.yaml */
 .sym_sub_text.tap {
   translate: -5px 2px;
@@ -263,16 +260,13 @@ rect.held, rect.combo.held {
   font-size: 10px;
   opacity: 1.0;
 }
-
 /* Toggle */
 .toggle.shifted {
   translate: -10px 12px;
 }
-
 .toggle.hold {
   translate: 13px -23px;
 }
-
 /* Variant for tap-dances */
 .tap_dance.tap {
   translate: -7px 0px;
@@ -283,7 +277,6 @@ rect.held, rect.combo.held {
   font-size: 12px;
   opacity: 1.0;
 }
-
 /* Variant for symbol next to symbol */
 .sym_by_sym.tap {
   translate: -6px 0px;
@@ -292,7 +285,6 @@ rect.held, rect.combo.held {
   translate: 10px 12px;
   opacity: 1.0;
 }
-
 .combo.sym_by_sym.tap {
   translate: -35px 0px;
 }
@@ -300,11 +292,9 @@ rect.held, rect.combo.held {
   translate: 35px 20px;
   opacity: 1.0;
 }
-
 .combo.sym_by_sym.hold {
   visibility: hidden;
 }
-
 /* hide hold box for combo sym_by_sym */
 .combo.sym_by_sym.hold > path[stroke="none"][fill="none"] {
   visibility: hidden;
