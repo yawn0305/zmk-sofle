@@ -38,7 +38,7 @@ layers:
   - K
   - L
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -55,7 +55,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
   - FUNTION
   - {t: '[', s: '{'}
   - $$mdi:mouse-right-click-outline$$
@@ -102,7 +102,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: ;, s: ':'}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Ctl+Z
