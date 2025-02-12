@@ -13,7 +13,7 @@
       revision: refactor
     - name: nice-view-mod
       remote: gpeye
-      revision: main 
+      revision: main
     - name: zmk
       remote: zmkfirmware
       revision: main
