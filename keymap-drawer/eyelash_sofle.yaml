@@ -25,8 +25,8 @@ layers:
   - I
   - O
   - P
-  - {t: '=', s: +}
-  - '&td_shift_cap'
+  - {t: '`', s: '~'}
+  - $$mdi:apple-keyboard-shift$$
   - A
   - S
   - D
@@ -51,7 +51,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '`', s: '~'}
+  - '&CAP_RGB'
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
@@ -65,19 +65,19 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   FUNTION:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - F1
   - F2
   - F3
   - F4
   - F5
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
+  - '&mkp MB4'
+  - END
+  - HOME
+  - '&mkp MB5'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '=', s: +}
   - $$mdi:keyboard-tab$$
   - F6
   - F7
@@ -90,7 +90,7 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F12
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
   - F11
   - F12
@@ -103,10 +103,10 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:backspace-reverse-outline$$
-  - HOME
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
   - Ctl+Z
-  - Ctl+Sft+X
+  - Ctl+X
   - Ctl+Sft+C
   - Ctl+Sft+V
   - Ctl+Y
@@ -116,11 +116,11 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - \
-  - END
+  - $$mdi:apple-keyboard-caps$$
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:keyboard-space$$
   - {t: SETTING, type: held}
   - '&mkp MB4'
   - $$mdi:mouse-left-click-outline$$
