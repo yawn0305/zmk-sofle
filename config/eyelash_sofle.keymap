@@ -46,38 +46,6 @@
         tap-ms = <30>;
     };
 
-    td_grave_esc: td_grave_esc {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_GRAVE_ESC";
-        #binding-cells = <0>;
-        bindings = <&kp GRAVE>, <&kp ESCAPE>;
-    };
-
-    long_sticky_key: long_sticky_key {
-        compatible = "zmk,behavior-sticky-key";
-        label = "LONG_STICKY_KEY";
-        bindings = <&kp>;
-        #binding-cells = <1>;
-        release-after-ms = <400>;
-        ignore-modifiers;
-    };
-
-    td_shift_cap: td_shift_cap {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TD_SHIFT_CAP";
-        #binding-cells = <0>;
-        bindings = <&kp LSHFT>, <&CAP_RGB>;
-    };
-
-    up_down: up_down {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&kp DOWN>, <&kp UP_ARROW>;
-
-        tap-ms = <0>;
-        label = "UP_DOWN";
-    };
-
     combos { compatible = "zmk,combos"; };
 
     behaviors {
