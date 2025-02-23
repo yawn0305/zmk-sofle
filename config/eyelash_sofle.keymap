@@ -123,11 +123,11 @@
 
         SETTING {
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0        &bt BT_SEL 1    &bt BT_SEL 2         &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PLAY        &none          &none         &none  &none       &none            &none
-&none            &none               &none           &none                &kp C_REWIND  &none           &kp C_PAUSE       &none          &out OUT_USB  &none  &none       &kp PRINTSCREEN  &none
-&none            &kp K_CONTEXT_MENU  &studio_unlock  &none                &kp C_FF      &none           &kp C_PREV        &kp C_AC_HOME  &none         &none  &none       &none            &none
-&none            &none               &none           &kp C_AL_CALCULATOR  &none         &out OUT_BLE    &kp C_NEXT        &none          &kp C_MUTE    &none  &none       &none            &none
-&rgb_ug RGB_TOG  &bootloader         &sys_reset      &none                &none         &none           &kp C_PLAY_PAUSE  &none          &none         &none  &sys_reset  &bootloader
+&bt BT_CLR       &bt BT_SEL 0        &bt BT_SEL 1    &bt BT_SEL 2         &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PLAY        &none          &none                 &none  &none       &none            &none
+&none            &none               &none           &none                &kp C_REWIND  &none           &kp C_PAUSE       &none          &out OUT_USB          &none  &none       &kp PRINTSCREEN  &none
+&none            &kp K_CONTEXT_MENU  &studio_unlock  &none                &kp C_FF      &none           &kp C_PREV        &kp C_AC_HOME  &none                 &none  &none       &none            &none
+&none            &none               &none           &kp C_AL_CALCULATOR  &none         &out OUT_BLE    &kp C_NEXT        &none          &kp C_AL_MY_COMPUTER  &none  &none       &none            &none
+&rgb_ug RGB_TOG  &bootloader         &sys_reset      &none                &none         &none           &kp C_PLAY_PAUSE  &none          &none                 &none  &sys_reset  &bootloader
             >;
 
             label = "SETTING";
