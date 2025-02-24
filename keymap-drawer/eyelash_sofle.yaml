@@ -116,7 +116,7 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - \
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - A
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
