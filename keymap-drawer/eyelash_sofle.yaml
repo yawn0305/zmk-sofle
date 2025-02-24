@@ -185,12 +185,12 @@ layers:
   - RGB TOG
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - '&soft_off'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - PLAY PAUSE
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
-  - '&soft_off'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
