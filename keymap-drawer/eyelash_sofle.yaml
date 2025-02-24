@@ -57,9 +57,9 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
-  - {t: '[', h: FUNTION, s: '{'}
+  - FUNTION
   - $$mdi:play-pause$$
-  - {t: ']', h: FUNTION, s: '}'}
+  - FUNTION
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - {t: ;, s: ':'}
@@ -116,7 +116,7 @@ layers:
   - $$mdi:pan-up$$
   - $$mdi:pan-right$$
   - \
-  - A
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
