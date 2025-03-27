@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-control$$
+  - SETTING
   - $$mdi:keyboard-space$$
   - FUNTION
   - $$mdi:play-pause$$
   - FUNTION
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-control$$
+  - SETTING
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   FUNTION:
@@ -122,11 +122,11 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
-  - SETTING
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: SETTING, type: held}
   - $$mdi:mouse-left-click-outline$$
   - {t: SETTING, type: held alternate}
-  - SETTING
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-control$$
   - HOME
   - END
@@ -137,20 +137,20 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
-  - PLAY
+  - PREVIOUS
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&studio_unlock'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - REWIND
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - PAUSE
+  - $$mdi:skip-next$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT USB
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -159,11 +159,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - CONTEXT MENU
-  - '&studio_unlock'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - FF
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:skip-previous$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - REWIND
   - AC HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -176,7 +176,7 @@ layers:
   - AL CALCULATOR
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT BLE
-  - $$mdi:skip-next$$
+  - FF
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - AL MY COMPUTER
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -186,12 +186,12 @@ layers:
   - RGB TOG
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - PLAY PAUSE
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
