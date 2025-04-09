@@ -53,13 +53,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:volume-off$$
+  - PLAY PAUSE
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - FUNTION
   - $$mdi:keyboard-space$$
   - $$mdi:arrow-left-bold$$
-  - $$mdi:play-pause$$
+  - $$mdi:mouse-left-click-outline$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-space$$
   - FUNTION
