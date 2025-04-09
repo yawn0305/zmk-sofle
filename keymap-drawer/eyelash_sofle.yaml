@@ -63,8 +63,8 @@ layers:
   - {t: ']', s: '}'}
   - $$mdi:keyboard-space$$
   - FUNTION
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-right-bold$$
   FUNTION:
   - Ctl+S
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -103,8 +103,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
   - '&ctrl_caps'
   - F11
   - F12
