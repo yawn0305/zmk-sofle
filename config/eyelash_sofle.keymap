@@ -5,11 +5,10 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/outputs.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -27,13 +26,12 @@
     trigger-period-ms = <16>;
 };
 
-
 / {
-
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
         tap-ms = <100>;
     };
 
@@ -70,11 +68,11 @@
 
         DEFAULT {
             bindings = <
-&kp ESCAPE      &kp N1    &kp N2        &kp N3  &kp N4     &kp N5      &mmv MOVE_UP     &kp N6     &kp N7     &kp N8     &kp N9        &kp N0         &kp MINUS
-&kp TAB         &kp Q     &kp W         &kp E   &kp R      &kp T       &mmv MOVE_DOWN   &kp Y      &kp U      &kp I      &kp O         &kp P          &kp GRAVE
-&kp LEFT_SHIFT  &kp A     &kp S         &kp D   &kp F      &kp G       &mmv MOVE_LEFT   &kp H      &kp J      &kp K      &kp L         &kp BACKSPACE  &kp DELETE
-&ctrl_cap_rgb   &kp Z     &kp X         &kp C   &kp V      &kp B       &mmv MOVE_RIGHT  &kp N      &kp M      &kp COMMA  &kp DOT       &kp FSLH       &kp ENTER
-&mkp LCLK       &kp LALT  &kp LEFT_GUI  &mo 1   &kp SPACE  &kp LEFT    &mkp RCLK        &kp RIGHT  &kp SPACE  &mo 1      &kp UP_ARROW  &kp DOWN
+&kp ESCAPE      &kp N1    &kp N2        &kp N3     &kp N4     &kp N5    &kp UP          &kp N6  &kp N7     &kp N8     &kp N9            &kp N0             &kp MINUS
+&kp TAB         &kp Q     &kp W         &kp E      &kp R      &kp T     &kp DOWN_ARROW  &kp Y   &kp U      &kp I      &kp O             &kp P              &kp GRAVE
+&kp CAPS        &kp A     &kp S         &kp D      &kp F      &kp G     &kp LEFT        &kp H   &kp J      &kp K      &kp L             &kp BACKSPACE      &kp DELETE
+&kp LEFT_SHIFT  &kp Z     &kp X         &kp C      &kp V      &kp B     &kp RIGHT       &kp N   &kp M      &kp COMMA  &kp DOT           &kp FSLH           &kp ENTER
+&kp C_MUTE      &kp LALT  &kp LEFT_GUI  &kp LCTRL  &kp SPACE  &mo 1     &none           &mo 1   &kp SPACE  &mo 1      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -83,11 +81,11 @@
 
         FUNTION {
             bindings = <
-&kp LC(S)       &mkp MB4      &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB5       &kp C_PREVIOUS      &mkp MB4        &mkp LCLK       &mkp MCLK     &mkp RCLK        &mkp MB5              &kp EQUAL
-&kp TAB         &kp F1        &kp F2        &kp F3     &kp F4     &kp F5         &kp C_NEXT          &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
-&kp LEFT_SHIFT  &kp F6        &kp F7        &kp F8     &kp F9     &kp F10        &kp C_RW            &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT        &kp SEMICOLON         &kp SQT
-&ctrl_caps      &kp F11       &kp F12       &kp F13    &kp F14    &kp F15        &kp C_FAST_FORWARD  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp NON_US_BACKSLASH  &none
-&kp C_MUTE      &kp LEFT_ALT  &kp LEFT_GUI  &mo 2      &mo 2      &kp PAGE_UP    &kp C_PLAY_PAUSE    &kp PG_DN       &mo 2           &mo 2         &kp HOME         &kp END
+&kp LC(S)       &mkp MB4      &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB5    &mmv MOVE_UP     &mkp MB4        &mkp LCLK       &mkp MCLK     &mkp RCLK        &mkp MB5              &kp EQUAL
+&kp TAB         &kp F1        &kp F2        &kp F3     &kp F4     &kp F5      &mmv MOVE_DOWN   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp HOME              &kp END
+&kp CAPS        &kp F6        &kp F7        &kp F8     &kp F9     &kp F10     &mmv MOVE_LEFT   &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT        &kp SEMICOLON         &kp SQT
+&kp LEFT_SHIFT  &kp F11       &kp F12       &kp F13    &kp F14    &kp F15     &mmv MOVE_RIGHT  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp NON_US_BACKSLASH  &kp RIGHT_SHIFT
+&kp C_MUTE      &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL  &mo 2      &mo 2       &mkp LCLK        &mo 2           &mo 2           &kp RCTRL     &kp RIGHT_GUI    &kp RIGHT_ALT
             >;
 
             display-name = "FUNTION";
@@ -96,15 +94,15 @@
 
         SETTING {
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0        &bt BT_SEL 1  &bt BT_SEL 2         &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREVIOUS    &none          &none                 &none  &none       &none            &studio_unlock
-&none            &none               &none         &none                &none         &none           &kp C_NEXT        &none          &out OUT_USB          &none  &none       &kp PRINTSCREEN  &none
-&none            &kp K_CONTEXT_MENU  &none         &none                &none         &none           &kp C_REWIND      &kp C_AC_HOME  &none                 &none  &none       &none            &none
-&none            &none               &none         &kp C_AL_CALCULATOR  &none         &out OUT_BLE    &kp C_FF          &none          &kp C_AL_MY_COMPUTER  &none  &none       &none            &none
-&rgb_ug RGB_TOG  &bootloader         &sys_reset    &none                &none         &none           &kp C_PLAY_PAUSE  &none          &none                 &none  &sys_reset  &bootloader
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1          &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &kp C_PREVIOUS    &none     &none                &none  &none       &none            &studio_unlock
+&none       &none          &kp C_AL_MY_COMPUTER  &kp END            &rgb_ug RGB_TOG  &none           &kp C_NEXT        &none     &out OUT_USB         &none  &none       &kp PRINTSCREEN  &none
+&none       &soft_off      &kp C_SLEEP           &kp C_SLEEP_MODE   &none            &none           &kp C_REWIND      &kp HOME  &kp C_AL_CALCULATOR  &none  &none       &none            &none
+&none       &kp C_AC_HOME  &none                 &kp K_APPLICATION  &none            &out OUT_BLE    &kp C_FF          &none     &kp K_APPLICATION    &none  &none       &none            &none
+&none       &bootloader    &sys_reset            &none              &none            &none           &kp C_PLAY_PAUSE  &none     &none                &none  &sys_reset  &bootloader
             >;
 
             label = "SETTING";
-            sensor-bindings = <&inc_dec_kp C_BRI_INC C_BRI_DEC>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
     };
 };
