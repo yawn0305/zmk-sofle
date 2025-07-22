@@ -72,7 +72,7 @@
 &kp TAB         &kp Q     &kp W         &kp E      &kp R      &kp T     &kp DOWN_ARROW  &kp Y   &kp U      &kp I      &kp O             &kp P              &kp GRAVE
 &kp CAPS        &kp A     &kp S         &kp D      &kp F      &kp G     &kp LEFT        &kp H   &kp J      &kp K      &kp L             &kp BACKSPACE      &kp DELETE
 &kp LEFT_SHIFT  &kp Z     &kp X         &kp C      &kp V      &kp B     &kp RIGHT       &kp N   &kp M      &kp COMMA  &kp DOT           &kp FSLH           &kp ENTER
-&kp C_MUTE      &kp LALT  &kp LEFT_GUI  &kp LCTRL  &kp SPACE  &mo 1     &none           &mo 1   &kp SPACE  &mo 1      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none           &kp LALT  &kp LEFT_GUI  &kp LCTRL  &kp SPACE  &mo 1     &none           &mo 1   &kp SPACE  &mo 2      &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -85,24 +85,24 @@
 &kp TAB         &kp F1        &kp F2        &kp F3     &kp F4     &kp F5      &mmv MOVE_DOWN   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp HOME              &kp END
 &kp CAPS        &kp F6        &kp F7        &kp F8     &kp F9     &kp F10     &mmv MOVE_LEFT   &kp LEFT        &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT        &kp SEMICOLON         &kp SQT
 &kp LEFT_SHIFT  &kp F11       &kp F12       &kp F13    &kp F14    &kp F15     &mmv MOVE_RIGHT  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp NON_US_BACKSLASH  &kp RIGHT_SHIFT
-&kp C_MUTE      &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL  &mo 2      &mo 2       &mkp LCLK        &mo 2           &mo 2           &kp RCTRL     &kp RIGHT_GUI    &kp RIGHT_ALT
+&none           &kp LEFT_ALT  &kp LEFT_GUI  &kp LCTRL  &mo 2      &mo 2       &mkp LCLK        &mo 2           &mo 2           &kp RCTRL     &kp RIGHT_GUI    &kp RIGHT_ALT
             >;
 
             display-name = "FUNTION";
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
         };
 
         SETTING {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1          &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &kp C_PREVIOUS    &none     &none                &none  &none       &none            &studio_unlock
-&none       &none          &kp C_AL_MY_COMPUTER  &kp END            &rgb_ug RGB_TOG  &none           &kp C_NEXT        &none     &out OUT_USB         &none  &none       &kp PRINTSCREEN  &none
-&none       &soft_off      &kp C_SLEEP           &kp C_SLEEP_MODE   &none            &none           &kp C_REWIND      &kp HOME  &kp C_AL_CALCULATOR  &none  &none       &none            &none
-&none       &kp C_AC_HOME  &none                 &kp K_APPLICATION  &none            &out OUT_BLE    &kp C_FF          &none     &kp K_APPLICATION    &none  &none       &none            &none
-&none       &bootloader    &sys_reset            &none              &none            &none           &kp C_PLAY_PAUSE  &none     &none                &none  &sys_reset  &bootloader
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1          &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &kp C_PREVIOUS    &none              &none                &none            &none       &none            &studio_unlock
+&none       &none          &kp C_AL_MY_COMPUTER  &kp END            &rgb_ug RGB_TOG  &none           &kp C_NEXT        &none              &out OUT_USB         &none            &none       &kp PRINTSCREEN  &none
+&none       &none          &none                 &none              &none            &none           &kp C_REWIND      &kp HOME           &kp C_AL_CALCULATOR  &none            &none       &kp PAGE_UP      &kp PAGE_DOWN
+&none       &kp C_AC_HOME  &none                 &kp K_APPLICATION  &none            &out OUT_BLE    &kp C_FF          &kp C_VOLUME_DOWN  &kp C_MUTE           &kp C_VOLUME_UP  &none       &none            &none
+&none       &bootloader    &sys_reset            &none              &none            &none           &kp C_PLAY_PAUSE  &none              &none                &none            &sys_reset  &bootloader
             >;
 
             label = "SETTING";
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
     };
 };
