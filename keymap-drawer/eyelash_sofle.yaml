@@ -53,7 +53,7 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - FUNTION
   - $$mdi:keyboard-space$$
-  - FUNTION
+  - SETTING
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   FUNTION:
@@ -118,7 +118,7 @@ layers:
   - $$mdi:pan-right$$
   - \
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:volume-off$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-control$$
@@ -127,7 +127,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: SETTING, type: held alternate}
   - SETTING
-  - {t: '$$mdi:apple-keyboard-control$$', type: held alternate}
+  - $$mdi:apple-keyboard-control$$
   - RIGHT GUI
   - $$mdi:apple-keyboard-option$$
   SETTING:
@@ -158,9 +158,9 @@ layers:
   - PRINTSCREEN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&soft_off'
-  - SLEEP
-  - SLEEP MODE
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - REWIND
@@ -168,8 +168,8 @@ layers:
   - AL CALCULATOR
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgUp
+  - PgDn
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - AC HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -177,9 +177,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT BLE
   - FF
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - APPLICATION
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-high$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-low$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -187,10 +187,10 @@ layers:
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - PLAY PAUSE
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
