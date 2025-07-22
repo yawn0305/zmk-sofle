@@ -177,9 +177,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - OUT BLE
   - FF
-  - $$mdi:volume-high$$
-  - $$mdi:volume-off$$
   - $$mdi:volume-low$$
+  - $$mdi:volume-off$$
+  - $$mdi:volume-high$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
