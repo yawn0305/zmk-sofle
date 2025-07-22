@@ -94,11 +94,11 @@
 
         SETTING {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1          &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &kp C_PREVIOUS    &none         &none                &none              &none       &none            &studio_unlock
-&none       &none          &kp C_AL_MY_COMPUTER  &kp END            &rgb_ug RGB_TOG  &none           &kp C_NEXT        &none         &out OUT_USB         &none              &none       &kp PRINTSCREEN  &none
-&none       &none          &none                 &none              &none            &none           &kp C_REWIND      &kp HOME      &kp C_AL_CALCULATOR  &none              &none       &kp PAGE_UP      &kp PAGE_DOWN
-&none       &kp C_AC_HOME  &none                 &kp K_APPLICATION  &none            &out OUT_BLE    &kp C_FF          &kp C_VOL_UP  &kp C_MUTE           &kp C_VOLUME_DOWN  &none       &none            &none
-&none       &bootloader    &sys_reset            &none              &none            &none           &kp C_PLAY_PAUSE  &none         &none                &none              &sys_reset  &bootloader
+&bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1          &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &kp C_PREVIOUS    &none              &none                &none            &none       &none            &studio_unlock
+&none       &none          &kp C_AL_MY_COMPUTER  &kp END            &rgb_ug RGB_TOG  &none           &kp C_NEXT        &none              &out OUT_USB         &none            &none       &kp PRINTSCREEN  &none
+&none       &none          &none                 &none              &none            &none           &kp C_REWIND      &kp HOME           &kp C_AL_CALCULATOR  &none            &none       &kp PAGE_UP      &kp PAGE_DOWN
+&none       &kp C_AC_HOME  &none                 &kp K_APPLICATION  &none            &out OUT_BLE    &kp C_FF          &kp C_VOLUME_DOWN  &kp C_MUTE           &kp C_VOLUME_UP  &none       &none            &none
+&none       &bootloader    &sys_reset            &none              &none            &none           &kp C_PLAY_PAUSE  &none              &none                &none            &sys_reset  &bootloader
             >;
 
             label = "SETTING";
